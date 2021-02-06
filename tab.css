@@ -1,0 +1,38 @@
+.docksite > .tab{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.docksite > .tab > header{
+    font: inherit;
+    font-size: var(--font-size-tab);
+    height: calc(var(--font-size-tab) + 9px);
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-tab-inactive);
+    padding: 0 3px;
+    padding-top: 3px;
+}
+.docksite > .tab > header > a {
+    text-decoration: none;
+    color: inherit;
+    height: calc(var(--font-size-tab) + 6px);
+    line-height: calc(var(--font-size-tab) + 6px);
+    padding: 0 3px;
+    margin: 0 1px;
+    border-radius: 3px 3px 0 0;
+    background: var(--color-tab-inactive);
+    border: var(--color-tab-inactive) 1px solid;
+}
+.docksite > .tab > header > a.active {
+    background: var(--color-tab-active);
+    border-bottom-color: var(--color-tab-active);
+}
+.docksite > .tab > .page{
+    flex-grow: 1;
+    width: 100%;
+    padding: 3px;
+}

@@ -1,0 +1,16 @@
+body{
+    --main-header-height: 30px;
+    --main-left-width: 60px;
+    --main-farleft-width: 30px;
+    --main-right-width: 170px;
+    --main-farright-width: 30px;
+    --main-bottom-height: 200px;
+
+    --font-size-normal: 16px;
+    --font-size-menu: 13px;
+    --font-size-tab: 10px;
+
+    --color-main-bg: #fbfbfb;
+    --color-tab-inactive: #ddd;
+    --color-tab-active: var(--color-main-bg);
+}

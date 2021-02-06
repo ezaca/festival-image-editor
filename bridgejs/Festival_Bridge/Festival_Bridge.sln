@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Festival_Bridge", "Festival_Bridge.csproj", "{53F50702-ED29-44DB-A6FA-DD04E4077A95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53F50702-ED29-44DB-A6FA-DD04E4077A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F50702-ED29-44DB-A6FA-DD04E4077A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F50702-ED29-44DB-A6FA-DD04E4077A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F50702-ED29-44DB-A6FA-DD04E4077A95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65F96EB7-6BD2-4786-8DD5-169DCAFBFD57}
+	EndGlobalSection
+EndGlobal

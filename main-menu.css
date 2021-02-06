@@ -1,0 +1,27 @@
+main > header{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding-left: var(--main-header-height);
+    padding-right: 10px;
+    justify-content: space-between;
+}
+main > header > div{
+    width: auto;;
+    height: 100%;
+    display: flex;
+}
+main > header > div > a{
+    display: block;
+    height: 100%;
+    padding: 0px 15px;
+    line-height: var(--main-header-height);
+    text-decoration: none;
+    color: inherit;
+    background: rgba(0,0,0,0);
+    transition: background .3s;
+    font-size: var(--font-size-menu);
+}
+main > header > div > a:hover{
+    background: rgba(0,0,0,.05);
+}

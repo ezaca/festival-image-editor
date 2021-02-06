@@ -1,0 +1,21 @@
+body > main > .viewport .editor-mouse{
+    pointer-events: initial;
+}
+body > main > .viewport > .stage{
+    background: #c9c9c9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
+}
+body > main > .viewport > .stage > .canvas{
+    overflow: visible;
+    background: white;
+}
+body > main > .viewport > .stage svg{
+    overflow: visible;
+    background: transparent;
+}

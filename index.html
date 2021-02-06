@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Festival Editor</title>
+    <link rel="stylesheet" type="text/css" href="variables.css">
+    <link rel="stylesheet" type="text/css" href="main-layout.css">
+    <link rel="stylesheet" type="text/css" href="debug.css">
+    <link rel="stylesheet" type="text/css" href="main-menu.css">
+    <link rel="stylesheet" type="text/css" href="toolbars.css">
+    <link rel="stylesheet" type="text/css" href="popups.css">
+    <link rel="stylesheet" type="text/css" href="canvas.css">
+    <link rel="stylesheet" type="text/css" href="tab.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="left">
+                <a href="" data-popup="mainmenu-file">File</a>
+                <a href="" data-popup="mainmenu-edit">Edit</a>
+                <a href="" data-popup="mainmenu-none">View</a>
+                <a href="" data-popup="mainmenu-none">Select</a>
+                <a href="" data-popup="mainmenu-none">Modify</a>
+                <a href="" data-popup="mainmenu-none">Text</a>
+            </div>
+            <div class="middle"></div>
+            <div class="right">
+                <a href="" data-popup="mainmenu-none">FAQ</a>
+                <a href="" data-popup="mainmenu-none">Community</a>
+                <a href="" data-popup="mainmenu-none">Login</a>
+            </div>
+        </header>
+        <section class="docksite docksite-icon docksite-farleft"></section>
+        <section class="docksite docksite-icon docksite-left"></section>
+        <section class="docksite docksite-panel docksite-main viewport" tabindex="1000">
+            <div class="stage" style="width: 1024px; height: 1024px;">
+                <div class="canvas" style="width: 256px; height: 256px"></div>
+                <div class="align-client editor-mouse"></div>
+            </div>
+        </section>
+        <section class="docksite docksite-panel docksite-right">
+            <div class="tab" data-tabid="right">
+                <header></header>
+            </div>
+        </section>
+        <section class="docksite docksite-icon docksite-farright"></section>
+        <section class="docksite docksite-panel docksite-bottom">
+            <div class="tab" data-tabid="bottom">
+                <header></header>
+                <div class="page" data-page-title="Properties" data-pageid="properties">
+                    
+                </div>
+                <div class="page" data-page-title="Test" data-pageid="test"></div>
+                <div class="page" data-page-title="Test 2" data-pageid="test2"></div>
+            </div>
+        </section>
+    </main>
+    <div class="popups">
+        <div class="popup basic" data-popup="mainmenu-file">
+            <a href="">New image</a>
+            <a href="">Open SVG</a>
+            <hr>
+            <a href="">Save</a>
+            <a href="">Save As&hellip;</a>
+            <a href="">Download SVG</a>
+            <hr>
+            <a href="">Import&hellip;</a>
+            <a href="">Export&hellip; &nearhk;</a>
+            <a href="">Preview&hellip; &nearhk;</a>
+            <a href="">Print&hellip; &nearhk;</a>
+            <hr>
+            <a href="">Logout</a>
+            <small>* This menu does not work yet.</small>
+        </div>
+        <div class="popup basic" data-popup="mainmenu-edit">
+            <div class="docksite">
+                <div class="toolbar" style="padding: 3px;">
+                    <a class="toolbar-button" id="main-menu-undo" title="Undo" style="background-size: 13px; background-image: url(pictures/menus/icons8-undo-26.png)"></a>
+                    <a class="toolbar-button" title="Redo" style="background-size: 13px; background-image: url(pictures/menus/icons8-redo-26.png)"></a>
+                    <a class="toolbar-button" title="Repeat" style="background-size: 13px; background-image: url(pictures/menus/icons8-repeat-26.png)"></a>
+                </div>
+                <div class="toolbar" style="padding: 3px;">
+                    <a class="toolbar-button" title="Cut" style="background-size: 13px; background-image: url(pictures/menus/icons8-cut-26.png)"></a>
+                    <a class="toolbar-button" title="Copy" style="background-size: 13px; background-image: url(pictures/menus/icons8-copy-26.png)"></a>
+                    <a class="toolbar-button" title="Paste" style="background-size: 13px; background-image: url(pictures/menus/icons8-paste-26.png)"></a>
+                    <a class="toolbar-button" title="Delete" style="background-size: 13px; background-image: url(pictures/menus/icons8-trash-26.png)"></a>
+                </div>
+            </div>
+            <a href="">Paste Attributes</a>
+            <a href="">Copy as PNG</a>
+            <hr>
+            <a href="">Duplicate</a>
+            <small>* This menu does not work yet.</small>
+            <small>* After you draw a rectangle,<br>
+            "Undo" will change its hint.</small>
+        </div>
+        <div class="popup basic" data-popup="mainmenu-none">
+            <small>(The menu is not implemented yet.)</small>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    
+    <pre id="debugArea">Event: <span class="pointer-event"></span>
+Start: <span class="pointer-start"></span>
+End: <span class="pointer-end"></span>
+Size: <span class="pointer-size"></span>
+Button: <span class="pointer-button"></span>
+</pre>
+
+    <script src="utils.js"></script>
+    <script src="bridgejs/bridge.js"></script>
+    <script src="bridgejs/bridge.meta.js"></script>
+    <script src="bridgejs/newtonsoft.json.js"></script>
+    <script src="bridgejs/jquery-2.2.4.js"></script>
+    <script src="bridgejs/Festival_Bridge.js"></script>
+    <script src="bridgejs/Festival_Bridge.meta.js"></script>
+</body>
+</html>

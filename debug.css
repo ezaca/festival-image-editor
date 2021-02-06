@@ -1,0 +1,42 @@
+#debugArea{
+    font-family: monospace;
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    color: black;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    background: #eee;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+a[data-toolid^=rect]{
+    position: relative;
+}
+a[data-toolid^=rect]:after{
+    position: absolute;
+    left: 200%;
+    top: 0;
+    width: 290px;
+    height: auto;
+    padding: 6px 9px;
+    background: antiquewhite;
+    color: black;
+    font-size: 14px;
+    content: "← Try to select the rect tool and draw a rect in the drawing canvas, it should work.";
+    z-index: 9999;
+    animation-name: fadeOut;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+@keyframes fadeOut {
+   0% {opacity: 1;width: 290px; }
+   99% {opacity: 0; width: 290px; }
+   100% {opacity: 0; width: 0px; }
+} 
